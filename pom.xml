@@ -9,14 +9,11 @@
 <profiles>
 <profile>
 <id>online</id>
-</profile>
-
 <modules>
 <module>java</module>
 <module>ear-test</module>
 <module>war-test</module>
 </modules>
-
 <build>
 <pluginManagement>
 <plugins>
@@ -29,5 +26,6 @@
 </plugins>
 </pluginManagement>
 </build>
+</profile>
 </profiles>
 </project>
