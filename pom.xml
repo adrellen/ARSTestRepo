@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/3.0.0 http://maven.apahce.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.test.ars</groupId>
+<artifactId>test-parent</artifactId>
+<version>1.0</version>
+<name>TEST PARENT PROJECT</name>
+<packaging>pom</packaging>
+
+<profiles>
+<profile>
+<id>online</id>
+</profile>
+
+<modules>
+<module>java</module>
+<module>ear-test</module>
+<module>war-test</module>
+</modules>
+
+<build>
+<pluginManagement>
+<plugins>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-compiler-plugin</artifactId>
+<configuration>
+<source>1.7</source>
+<target>1.7</target>
+</configuration>
+</plugins>
+</pluginManagement>
+</build>
+</profiles>
